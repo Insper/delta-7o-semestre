@@ -60,6 +60,7 @@ sd_id128_t machine_id;
 char server_url[] ="http://18.222.173.185:8081";
 
 void send_data(char *course, char *task_id, char *content) {
+    int ignore_me __attribute__((unused));
     sd_id128_get_machine_app_specific(APP_ID, &machine_id);
     
     char url[1024];
@@ -75,6 +76,6 @@ void send_data(char *course, char *task_id, char *content) {
 
     sprintf(wget_line, format_str, machine_id_str, content, url);    
     // printf("%s\n", wget_line);
-    system(wget_line);
+    ignore_me = system(wget_line);
     free(wget_line);
 }
