@@ -1,0 +1,421 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="Igor Montagner">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
+    
+    
+      
+        <title>Fórmulas matemáticas - Programa DELTA 7o semestre - Algoritmos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.63b94e9e.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7f672a1f.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#795548">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/printing.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="brown" data-md-color-accent="amber">
+  
+    
+      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#formulas-matematicas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Application header -->
+
+<script>
+  window.site_url = "";
+</script>
+
+<div class="md-printing-header">
+  <img class="cabecalho" src="css/cabecalho.png">
+  <img class="logo" src="css/logo.png">
+
+  <div class="frontmatter">
+    <div class="materia"> Programa DELTA 7o semestre - Algoritmos </div>
+    <div class="professor"> Igor Montagner </div>
+    <div class="semestre"> 2021/1 </div>
+  </div>
+</div>
+
+<header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid" aria-label="Header">
+
+    <!-- Link to home -->
+    <a
+      href=".."
+      title="Programa DELTA 7o semestre - Algoritmos"
+      class="md-header-nav__button md-logo"
+      aria-label="Programa DELTA 7o semestre - Algoritmos"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Programa DELTA 7o semestre - Algoritmos
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Fórmulas matemáticas
+            
+          </span>
+        </div>
+      
+    </div>
+
+    <!-- Button to open search dialogue -->
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository containing source -->
+    
+  </nav>
+</header>
+
+
+
+
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programa DELTA 7o semestre - Algoritmos" class="md-nav__button md-logo" aria-label="Programa DELTA 7o semestre - Algoritmos">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Programa DELTA 7o semestre - Algoritmos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-1" class="md-nav__link">
+    Tarefa 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-2" class="md-nav__link">
+    Tarefa 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-3" class="md-nav__link">
+    Tarefa 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-4" class="md-nav__link">
+    Tarefa 4
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="formulas-matematicas">Fórmulas matemáticas<a class="headerlink" href="#formulas-matematicas" title="Permanent link">&para;</a></h1>
+<p>A implementação de programas a partir de fórmulas matemáticas é frequente em SuperComputação. Neste primeiro dia iremos melhorar nossas habilidades neste tipo de tarefa. </p>
+<h2 id="tarefa-1">Tarefa 1<a class="headerlink" href="#tarefa-1" title="Permanent link">&para;</a></h2>
+<p>O cálculo de funções trigonométricas como <em>seno</em> e <em>cosseno</em> é normalmente feito com as funções do cabeçalho <code>math.h</code>. Nesta tarefa iremos fazer uma implementação alternativa para o <em>cosseno</em>, que pode ser calculado pela fórmula abaixo. </p>
+<div>
+<div class="MathJax_Preview">
+\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \dots
+</div>
+<script type="math/tex; mode=display">
+\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \dots
+</script>
+</div>
+<p>Seu trabalho será reimplementar esta função. Note que a série acima é infinita, então você deverá parar de calcular a série acima quando o módulo do termo atual for menor que <span><span class="MathJax_Preview">0,001</span><script type="math/tex">0,001</script></span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao-t1.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao-t1.c testes-t1.c -o testes-t1 -lsystemd</code></p>
+</div>
+<h2 id="tarefa-2">Tarefa 2<a class="headerlink" href="#tarefa-2" title="Permanent link">&para;</a></h2>
+<p><strong>(Adaptado de questão de prova)</strong> Ao analisar séries temporais de preços de ativos ao longo do tempo uma transformação frequentemente aplicada é o log da razão entre preços de momentos consecutivos. Ou seja, produzimos uma nova série seguindo a fórmula abaixo:</p>
+<div>
+<div class="MathJax_Preview">
+y_0 = x_0 \\
+y_i = \log \frac{x_i}{x_{i-1}}
+</div>
+<script type="math/tex; mode=display">
+y_0 = x_0 \\
+y_i = \log \frac{x_i}{x_{i-1}}
+</script>
+</div>
+<ul>
+<li><code>y</code> é a série de saída</li>
+<li><code>x</code> é a série de entrada</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao-t2.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao-t2.c testes-t2.c -o testes-t2 -lsystemd</code></p>
+</div>
+<h2 id="tarefa-3">Tarefa 3<a class="headerlink" href="#tarefa-3" title="Permanent link">&para;</a></h2>
+<p><strong>(Adaptado de questão de prova)</strong> A média móvel dos últimos 7 dias está sendo muito usada na análise de casos de COVID-19 para determinar se uma região tem tendência de subida ou descida. Vamos fazer implementações simples desse cálculo em CPU e GPU. Você deverá levar em conta o seguinte:</p>
+<ol>
+<li>se não houve coleta de dados em um dia, ele deverá ser considerado como tendo 0 casos</li>
+<li>as séries divulgadas se iniciam no primeiro dia em que foram registrados casos de COVID.</li>
+</ol>
+<p><strong>Dica</strong>: compare manualmente os resultados de seu programa com as entradas/saídas de teste. Isso pode ajudar a entender onde erros possivelmente bobos possam estar.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao-t3.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao-t3.c testes-t3.c -o testes-t3 -lsystemd</code></p>
+</div>
+<h2 id="tarefa-4">Tarefa 4<a class="headerlink" href="#tarefa-4" title="Permanent link">&para;</a></h2>
+<p><strong>(Para discussão na próxima sessão)</strong> Um método simples de </p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../translate-admonitions.js"></script>
+      
+    
+  </body>
+</html>

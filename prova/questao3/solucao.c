@@ -1,0 +1,1 @@
+void troco_moedas(int reais, int centavos, int *q50, int *q25, int *q10, int *q5, int *q1) {}
