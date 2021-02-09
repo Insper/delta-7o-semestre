@@ -11,7 +11,7 @@ A estrutura das aulas será a seguinte:
 Os temas de cada dia estão listados abaixo. No último dia faremos uma nova DELTA retomando atividades feitas durante esta semana.
 
 1. [Fórmulas matemáticas](01-formulas-matematicas)
-2. TBD
+2. [Problemas com vetores](02-problemas-com-vetores)
 3. TBD
 4. TBD
 5. Exercícios livres
