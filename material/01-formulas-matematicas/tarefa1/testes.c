@@ -8,11 +8,14 @@
 double mycos(double x);
 
 int main() {
-    
+    char msg[1000];
     for (int i = 0; i < 200; i++)
     {
         double num = (double) rand() / RAND_MAX * (M_PI);
-        assertEquals("Erro", fabs(cos(num) - mycos(num)) < 0.001, 1);
+        double aluno = mycos(num);
+        double resposta = cos(num);
+        sprintf(msg, "Esperado: %lf Recebido: %lf", resposta, aluno);
+        assertEquals(msg, fabs(aluno - resposta) < 0.001, 1);
     }
     
     printSummary
