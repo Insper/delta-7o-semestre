@@ -15,7 +15,7 @@
     
     
       
-        <title>Prova DELTA de algoritmos - Programa DELTA 7o semestre - Algoritmos</title>
+        <title>Iteração em vetores - Programa DELTA 7o semestre - Algoritmos</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prova-delta-de-algoritmos" class="md-skip">
+        <a href="#iteracao-em-vetores" class="md-skip">
           Skip to content
         </a>
       
@@ -158,7 +158,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Prova DELTA de algoritmos
+              Iteração em vetores
             
           </span>
         </div>
@@ -263,61 +263,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#questao-1" class="md-nav__link">
-    Questão 1
-  </a>
-  
-    <nav class="md-nav" aria-label="Questão 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplos" class="md-nav__link">
-    Exemplos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questao-2" class="md-nav__link">
-    Questão 2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questao-3" class="md-nav__link">
-    Questão 3
-  </a>
-  
-    <nav class="md-nav" aria-label="Questão 3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplos_1" class="md-nav__link">
-    Exemplos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -329,41 +274,45 @@
               
                 
                 
-                <h1 id="prova-delta-de-algoritmos">Prova DELTA de algoritmos<a class="headerlink" href="#prova-delta-de-algoritmos" title="Permanent link">&para;</a></h1>
-<p>Esta prova contém <strong>três questões</strong> e tem tempo total de duração de <strong>90 minutos</strong>. As regras da prova são simples:</p>
-<ol>
-<li>A prova é individual.</li>
-<li>É permitido consultar qualquer material na internet. Não é permitido consultar outras pessoas.</li>
-<li>Não é permitido copiar grandes trechos e/ou soluções prontas.</li>
-<li>Sempre que usar uma fonte externa, adicione uma referência no seu código usando um comentário.</li>
-<li>Todas as questões de implementação tem testes automatizados. A quantidade de testes que passam é mostrada ao executar o testador.</li>
-<li>As questões avaliam a capacidade de desenhar uma solução para os problemas apresentados e estruturá-la usando uma linguagem de programação. Todas as questões podem ser resolvidas usando conhecimentos básicos de Linguagem <em>C</em>.</li>
-<li>Em todas as questões você deverá implementar somente a função pedida. Um arquivo <em>.o</em> com uma função <code>main</code> contendo testes automatizados é fornecido para cada questão. Para testar basta executar o executável criado.</li>
-</ol>
-<div class="admonition note breakafter">
-<p class="admonition-title">Importante</p>
-<p>Um aluno estará minimamente capacitado se acertar <strong>TODAS</strong> as questões no tempo da prova.</p>
-<p>Para fazer a prova você precisará dos pacotes <code>build-essential libsystemd-dev</code> instalados em seu sistema.</p>
-<p>Essa prova possui um sistema de telemetria que registra quando um aluno tenta fazer uma questão. Toda informação é coletada anonimamente e é impossível associar uma tentativa de resolução a um aluno em específico. </p>
-<p>Toda a informação coletada será usada para melhorar o curso de Engenharia da Computação. <strong>Nenhuma informação é usada para nota</strong>.</p>
+                <h1 id="iteracao-em-vetores">Iteração em vetores<a class="headerlink" href="#iteracao-em-vetores" title="Permanent link">&para;</a></h1>
+<p>Neste segundo dia iremos trabalhar com problemas com iteração em vetores. </p>
+<h1 id="tarefa-1">Tarefa 1<a class="headerlink" href="#tarefa-1" title="Permanent link">&para;</a></h1>
+<p>Raul gosta muito de Kare e conhece uma série de mercados orientais que vendem este prato. Porém, cada mercado vende porções de tamanhos diferentes e o Raul, pão duro que é, quer saber qual é o local que vende o Kare mais barato. </p>
+<p>Seu trabalho será criar uma função que encontra a oferta mais barata dado um vetor de produtos contendo um campo preço e um campo peso.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes-t1 -lsystemd -lm</code></p>
 </div>
-<h2 id="questao-1">Questão 1<a class="headerlink" href="#questao-1" title="Permanent link">&para;</a></h2>
-<p>Seu trabalho será criar uma função que identifica o tamanho da maior sequência estritamente crescente em um vetor. Uma sequência de números <span><span class="MathJax_Preview">a_i, .... a_k</span><script type="math/tex">a_i, .... a_k</script></span> é crescente se <span><span class="MathJax_Preview">a_j &lt; a_{j+1}</span><script type="math/tex">a_j < a_{j+1}</script></span> para todo <code>j=i ... k-1</code>.</p>
-<p>Coloque sua resposta no arquivo <em>questao1/solucao.c</em>. Sua função deverá ter assinatura <code>int maior_sequencia_crescente(int *vetor, int n)</code>. Para compilar seu programa use</p>
-<p><code>gcc -Wall -Og solucao.c testes.o -o testes-q1 -lsystemd</code></p>
-<h3 id="exemplos">Exemplos<a class="headerlink" href="#exemplos" title="Permanent link">&para;</a></h3>
-<p>O tamanho da maior sequência crescente de <code>3 2 1 3 5 7 9 8</code> é 5: ela começa no <code>1</code>  e vai até o <code>9</code>.</p>
-<p>O tamanho da maior sequência crescente de <code>5 6 4 7 3 8</code> é 2 e existe empate entre <code>5 6</code>, <code>4 7</code> e  <code>3 8</code>.</p>
-<h2 id="questao-2">Questão 2<a class="headerlink" href="#questao-2" title="Permanent link">&para;</a></h2>
-<p>Balancear parênteses é uma tarefa comum ao intepretar textos estruturados. Faça uma função <code>int parenteses_balanceados(char *texto)</code> que retorna <code>1</code> se os parênteses de um texto estão balanceados e <code>0</code> caso contrário.</p>
-<p>Coloque sua resposta em <em>questao2/solucao.c</em>. Para compilar seu programa use</p>
-<p><code>gcc -Wall -Og solucao.c testes.o -o testes-q2 -lsystemd</code></p>
-<h2 id="questao-3">Questão 3<a class="headerlink" href="#questao-3" title="Permanent link">&para;</a></h2>
-<p>Você foi contratado para criar uma máquina de café que recebe pagamentos em dinheiro. Um dos pontos importantes é devolver a quantidade correta de trocos usando moedas de 50, 25, 10, 5 e 1 centavos. Você deverá fazer uma função <code>void troco_moedas(int reais, int centavos, int *q50, int *q25, int *q10, int *q5, int *q1)</code> que, dada a quantidade de reais e centavos a serem dados de troco retorne a quantidade de moedas de cada tipo a serem usadas. Você deverá usar a menor quantidade de moedas possível. Você pode supor que tem infinitas moedas a sua disposição.</p>
-<p>Coloque sua resposta em  <em>questao3/solucao.c</em>. Para compilar seu programa use</p>
-<p><code>gcc -Wall -Og solucao.c testes.o -o testes-q3 -lsystemd</code></p>
-<h3 id="exemplos_1">Exemplos<a class="headerlink" href="#exemplos_1" title="Permanent link">&para;</a></h3>
-<p>Para devolver 35 centavos de troco retornamos uma moeda de 25 e uma moeda de 10. Note que retornar 3 moedas de 10 e uma de 5 também é possível, mas usa mais moedas.</p>
+<h1 id="tarefa-2">Tarefa 2<a class="headerlink" href="#tarefa-2" title="Permanent link">&para;</a></h1>
+<p>Dada uma sequência de números, encontre o par que possui a maior soma. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes-t2 -lsystemd -lm</code></p>
+</div>
+<p>Com os testes passando, reflita sobre a questão abaixo. </p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Qual a complexidade computacional da sua solução? É possível fazer melhor?</p>
+</div>
+<h1 id="tarefa-3">Tarefa 3<a class="headerlink" href="#tarefa-3" title="Permanent link">&para;</a></h1>
+<p>Dada uma sequência de números inteiros, mostrar no terminal a contagem de quantas vezes cada um aparece. Veja o exemplo abaixo. </p>
+<p><strong>Entrada</strong>
+<div class="highlight"><pre><span></span><code>1 3 0 1 5 7 0 1 3
+</code></pre></div></p>
+<p><strong>Saída</strong>
+<div class="highlight"><pre><span></span><code>1 aparece 3 vezes
+3 aparece 2 vezes
+0 aparece 2 vezes
+5 aparece 1 vez
+7 aparece 1 vez
+</code></pre></div></p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes-t3 -lsystemd -lm</code></p>
+</div>
                 
               
               

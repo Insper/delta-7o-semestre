@@ -7,6 +7,7 @@
 #include <string.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/mman.h>
@@ -54,6 +55,21 @@ assertEquals("Testando com entrada ->" entrada, ptr[0], ptr[1]); \
 \
 }
 
+
+#define rodaESalvaSaida(expr, nome_saida) \
+{ \
+    pid_t p = fork(); \
+    if (p == 0) { \
+        int saida = open(nome_saida, O_CREAT | O_TRUNC | O_WRONLY, 0700); \
+        dup2(saida, STDOUT_FILENO); \
+        \
+        expr ; \
+        close(saida); \
+        exit(0); \
+    } else { \
+        wait(NULL); \
+    } \
+} 
 
 #define APP_ID SD_ID128_MAKE(2, c4, d5, f6, aa, b3, 12, 66, 44, 33, 12, ab, cd, ef, 11, 22)
 sd_id128_t machine_id;

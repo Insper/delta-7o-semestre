@@ -36,14 +36,14 @@ int main() {
     media_movel_ans(vec_test, vec_ans_certo, 7, N);
     for (int i = 0; i < N; i++) {
         sprintf(msg, "Media 7 dias. Elemento %d. Esperado %lf Recebido %lf", i, vec_ans_certo[i], vec_ans[i]);
-        assertEquals(msg, vec_ans[i], vec_ans_certo[i]);   
+        assertEquals(msg, fabs(vec_ans[i] - vec_ans_certo[i]) < 0.0001, 1);   
     }
 
     media_movel(vec_test, vec_ans, 13, N);
     media_movel_ans(vec_test, vec_ans_certo, 13, N);
     for (int i = 0; i < N; i++) {
         sprintf(msg, "Media 13 dias. Elemento %d. Esperado %lf Recebido %lf", i, vec_ans_certo[i], vec_ans[i]);
-        assertEquals(msg, vec_ans[i], vec_ans_certo[i]);   
+        assertEquals(msg, fabs(vec_ans[i] - vec_ans_certo[i]) < 0.0001, 1);   
     }
 
     return 0;
