@@ -15,7 +15,7 @@ Seu trabalho será reimplementar esta função. Note que a série acima é infin
 !!! example
     Abra o arquivo *solucao-t1.c* e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.
 
-    `gcc -Og -Wall solucao.c testes.c -o testes-t1 -lsystemd`
+    `gcc -Og -Wall solucao.c testes.c -o testes-t1 -lsystemd -lm`
 
 
 ## Tarefa 2
@@ -41,8 +41,14 @@ $$
 1. se não houve coleta de dados em um dia, ele deverá ser considerado como tendo 0 casos
 2. as séries divulgadas se iniciam no primeiro dia em que foram registrados casos de COVID.
 
-**Dica**: compare manualmente os resultados de seu programa com as entradas/saídas de teste. Isso pode ajudar a entender onde erros possivelmente bobos possam estar.
 
+Dada uma série de números $x$, a média móvel dos últimos $D$ dias é uma nova série $y$ que segue a fórmula abaixo. 
+
+$$
+y_i = \frac{1}{D} \sum_{k=0}^D x_{i - k}
+$$
+
+Note que tanto $x$ quanto $y$ tem a mesma quantidade de dias $N$, mas cada elemento de $y$ é uma média dos $D$ elementos anteriores de $x$.
 
 !!! example
     Abra o arquivo *solucao-t3.c* e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.
