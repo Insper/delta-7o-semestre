@@ -12,18 +12,18 @@
       
         <meta name="author" content="Igor Montagner">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
     
     
       
-        <title>Programa DELTA 7o semestre - Algoritmos</title>
+        <title>Matrizes em *C* - Programa DELTA 7o semestre - Algoritmos</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.63b94e9e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.63b94e9e.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.7f672a1f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7f672a1f.min.css">
       
       
         
@@ -41,7 +41,7 @@
     
     
     
-      <link rel="stylesheet" href="css/printing.css">
+      <link rel="stylesheet" href="../css/printing.css">
     
     
       
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#programa-delta-7o-semestre-algoritmos" class="md-skip">
+        <a href="#matrizes-em-c" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
 
     <!-- Link to home -->
     <a
-      href="."
+      href=".."
       title="Programa DELTA 7o semestre - Algoritmos"
       class="md-header-nav__button md-logo"
       aria-label="Programa DELTA 7o semestre - Algoritmos"
@@ -156,7 +156,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Matrizes em *C*
             
           </span>
         </div>
@@ -223,7 +223,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Programa DELTA 7o semestre - Algoritmos" class="md-nav__button md-logo" aria-label="Programa DELTA 7o semestre - Algoritmos">
+    <a href=".." title="Programa DELTA 7o semestre - Algoritmos" class="md-nav__button md-logo" aria-label="Programa DELTA 7o semestre - Algoritmos">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -238,20 +238,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
-    
   </li>
 
     
@@ -272,6 +263,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#um-pouco-de-contexto-transporte-coletivo" class="md-nav__link">
+    Um pouco de contexto: transporte coletivo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-1" class="md-nav__link">
+    Tarefa 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-2" class="md-nav__link">
+    Tarefa 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarefa-3-desafio" class="md-nav__link">
+    Tarefa 3 (desafio)
+  </a>
+  
+    <nav class="md-nav" aria-label="Tarefa 3 (desafio)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-1" class="md-nav__link">
+    Exemplo 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-2" class="md-nav__link">
+    Exemplo 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -286,22 +335,93 @@
                   
                 
                 
-                <h1 id="programa-delta-7o-semestre-algoritmos">Programa DELTA 7o semestre - Algoritmos<a class="headerlink" href="#programa-delta-7o-semestre-algoritmos" title="Permanent link">&para;</a></h1>
-<p>O principal objetivo da DELTA do 7o semestre é promover um espaço de prática para desenho e implementação de algoritmos. Em especial, veremos problemas que possam ser resolvidos com vetores e matrizes. </p>
-<p>A estrutura das aulas será a seguinte:</p>
+                <h1 id="matrizes-em-c">Matrizes em <em>C</em><a class="headerlink" href="#matrizes-em-c" title="Permanent link">&para;</a></h1>
+<p>Em <em>C</em> precisamos nos preocupar com o layout de memória dos dados que armazenamos. No caso de matrizes, a maneira mais eficiente de fazê-lo é guardá-las de maneira <em>linear</em>. Colocaremos na memória uma linha depois da outra, como na figura abaixo.</p>
+<p><img alt="Matriz &quot;deitada&quot; linha a linha" src="matriz.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Em uma matriz de tamanho <code>4x7</code> (4 linhas, 7 colunas), qual é o elemento do vetor que representa a posição <code>2x5</code> (linha 3, coluna 6)? Considere que começamos a contar linhas e colunas do zero. </p>
+<details class="details"><summary>Details</summary><p>Estamos considerando que começamos a contar as linhas e colunas do zero. A posição do vetor é <code>19</code>. Este número é obtido pela expressão</p>
+<p>$ i \times c + j$</p>
 <ul>
-<li>30 min - discussão de um problema da aula anterior</li>
-<li>70 min - prática de exercícios</li>
-<li>20 min - fechamento com dúvidas gerais</li>
+<li><code>i</code> é a linha a ser acessada</li>
+<li><code>j</code> é a coluna</li>
+<li><code>c</code> é o número de colunas da matriz</li>
 </ul>
-<p>Os temas de cada dia estão listados abaixo. No último dia faremos uma nova DELTA retomando atividades feitas durante esta semana.</p>
+<p><code>19 = 2 * 7 + 5</code></p>
+</details>
+</div>
+<h2 id="um-pouco-de-contexto-transporte-coletivo">Um pouco de contexto: transporte coletivo<a class="headerlink" href="#um-pouco-de-contexto-transporte-coletivo" title="Permanent link">&para;</a></h2>
+<p>O transporte coletivo pode ser organizado em grandes terminais que ligam diferentes regiões da cidade. Podemos representar as ligações entre terminais usando uma matriz em que a posição <code>i,j</code> representa o número de ônibus que saem do terminal <code>i</code> e chegam no terminal <code>j</code>. Naturalmente as posições <code>i,j</code> e <code>j,i</code> tem o mesmo valor, pois os ônibus sempre saem de um terminal e retornam no mesmo dia.</p>
+<h2 id="tarefa-1">Tarefa 1<a class="headerlink" href="#tarefa-1" title="Permanent link">&para;</a></h2>
+<p>Para cada terminal de ônibus, gostaríamos de descobrir o terminal destino que recebe menor quantidade de ônibus. Se um terminal não receber nenhum ônibus ele deve ser ignorado. Veja os exemplos abaixo. Tanto a matriz de entrada como o vetor de saída serão recebidos como argumentos.</p>
+<p><strong>Entrada</strong>
+<div class="highlight"><pre><span></span><code>0 4 5 7 0
+4 0 2 0 1
+5 2 0 9 3
+7 0 9 0 3
+0 1 3 3 0
+</code></pre></div></p>
+<p><strong>Saída</strong>
+<div class="highlight"><pre><span></span><code>4
+1
+2
+3
+1
+</code></pre></div></p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes -lsystemd -lm</code></p>
+</div>
+<h2 id="tarefa-2">Tarefa 2<a class="headerlink" href="#tarefa-2" title="Permanent link">&para;</a></h2>
+<p>Também é importante identificar o quanto cada terminal está conectado com outros. Nesta tarefa você deverá encontrar </p>
 <ol>
-<li><a href="01-formulas-matematicas">Fórmulas matemáticas</a></li>
-<li><a href="02-problemas-com-vetores">Problemas com vetores</a></li>
-<li><a href="03-matrizes">Matrizes</a></li>
-<li>TBD</li>
-<li>Exercícios livres</li>
+<li>o terminal que recebe a maior quantidade de ônibus</li>
+<li>o terminal que está conectado com a maior quantidade de outros terminais. </li>
 </ol>
+<p><strong>Entrada</strong>
+<div class="highlight"><pre><span></span><code>0 4 5 0 1
+4 0 0 0 1
+5 0 0 9 3
+0 0 9 0 3
+1 1 3 3 0
+</code></pre></div></p>
+<p><strong>Saída</strong>
+<div class="highlight"><pre><span></span><code>O terminal 2 é o que recebe mais onibus (17 onibus)
+O terminal 4 é o mais conectado (4 terminais)
+</code></pre></div></p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes -lsystemd -lm</code></p>
+</div>
+<h2 id="tarefa-3-desafio">Tarefa 3 (desafio)<a class="headerlink" href="#tarefa-3-desafio" title="Permanent link">&para;</a></h2>
+<p>Uma grande preocupação no transporte é que seja possível atravessar a cidade usando os ônibus disponibilizados. Gostaríamos de responder à pergunta: "é possível, partindo do terminal <code>s</code>, chegar ao terminal <code>d</code>?" Estamos interessados em uma resposta Sim/Não e não necessariamente na resposta que utiliza o menor número de ônibus. Veja os exemplos abaixo.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes-t1 -lsystemd -lm</code></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Desenhe os exemplos no papel. Será mais fácil de entender as respostas.</p>
+</div>
+<h3 id="exemplo-1">Exemplo 1<a class="headerlink" href="#exemplo-1" title="Permanent link">&para;</a></h3>
+<p><strong>Entrada</strong>
+<div class="highlight"><pre><span></span><code>0 2 3 0 0
+2 0 1 0 0
+3 1 0 0 0 
+0 0 0 0 5
+0 0 0 5 0
+</code></pre></div></p>
+<p>No exemplo acima é impossível chegar do terminal <code>1</code> ao terminal <code>3</code>. </p>
+<h3 id="exemplo-2">Exemplo 2<a class="headerlink" href="#exemplo-2" title="Permanent link">&para;</a></h3>
+<p><strong>Entrada</strong>
+<div class="highlight"><pre><span></span><code>0 5 0
+5 0 2
+0 2 0
+</code></pre></div></p>
+<p>No exemplo acima é possível chegar do terminal <code>1</code> até o terminal <code>3</code> passando pelo terminal <code>2</code>.</p>
                 
               
               
@@ -333,22 +453,22 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.fae956e7.min.js"
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
       
-        <script src="translate-admonitions.js"></script>
+        <script src="../translate-admonitions.js"></script>
       
     
   </body>
