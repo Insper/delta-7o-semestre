@@ -10,7 +10,7 @@ Em *C* precisamos nos preocupar com o layout de memória dos dados que armazenam
     ??? details
         Estamos considerando que começamos a contar as linhas e colunas do zero. A posição do vetor é `19`. Este número é obtido pela expressão
 
-        $ i \times c + j$
+        `i * c + j`
 
         * `i` é a linha a ser acessada
         * `j` é a coluna
