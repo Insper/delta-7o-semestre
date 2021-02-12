@@ -7,7 +7,17 @@
 
 #include "solucao.c"
 
+void sprint_vec(char *msg, unsigned char *vec, int n) {
+    char num[10];
+    for (int i = 0; i < n; i++) {
+        sprintf(num, "%d ", vec[i]);
+        strcat(msg, num);
+    }
+}
+
+
 int main() {
+    char msg[1024];
     {
         BigInt *a = bigint_new(1);
         a->digits[0] = 5;
@@ -16,6 +26,10 @@ int main() {
 
         printf("Teste 5 + 7\n");
         BigInt *r = bigint_sum(a, b);
+        sprintf(msg, "{");
+        sprint_vec(msg, r->digits, r->n);
+        printf("Resultado: %s}\n", msg);
+
         assertEquals("r->N == 2", r->n, 2);
         assertEquals("r->digits == {2, 1}", r->digits[0] == 2 && r->digits[1] == 2, 1);
 
@@ -32,6 +46,9 @@ int main() {
 
         printf("Teste 1 + 7\n");
         BigInt *r = bigint_sum(a, b);
+        sprintf(msg, "{");
+        sprint_vec(msg, r->digits, r->n);
+        printf("Resultado: %s}\n", msg);
         assertEquals("r->N == 1", r->n, 1);
         assertEquals("r->digits == {8}", r->digits[0], 8);
 
@@ -48,6 +65,9 @@ int main() {
 
         printf("Teste 31 + 9\n");
         BigInt *r = bigint_sum(a, b);
+        sprintf(msg, "{");
+        sprint_vec(msg, r->digits, r->n);
+        printf("Resultado: %s}\n", msg);
         assertEquals("r->N == 2", r->n, 2);
         assertEquals("r->digits == {0, 4}", r->digits[0] == 0 && r->digits[1] == 4, 1);
 
@@ -65,6 +85,9 @@ int main() {
 
         printf("Teste 5 + 99\n");
         BigInt *r = bigint_sum(b, a);
+        sprintf(msg, "{");
+        sprint_vec(msg, r->digits, r->n);
+        printf("Resultado: %s}\n", msg);
         assertEquals("r->N == 3", r->n, 3);
         assertEquals("r->digits == {4, 0, 1}", r->digits[0] == 4 && r->digits[1] == 0 && r->digits[2] == 1, 1);
 
