@@ -19,4 +19,4 @@ Dados dois vetores de inteiros, preencha um terceiro vetor com a intereseção d
 !!! example
     Abra o arquivo *solucao.c* e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.
 
-    `gcc -Og -Wall solucao.c testes.c -o testes -lsystemd -lm`
+    `gcc -Og -Wall testes.c -o testes -lsystemd -lm`

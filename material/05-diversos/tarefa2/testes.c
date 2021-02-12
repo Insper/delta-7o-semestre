@@ -146,5 +146,10 @@ int main() {
         assertEquals("Elemento 2 não encontrado ou encontrado mais de uma vez", encontrou_e_eh_unico(vec_out, nout, 2), 1);
         assertEquals("Elemento 4 não encontrado ou encontrado mais de uma vez", encontrou_e_eh_unico(vec_out, nout, 4), 1);
     }
+
+    printSummary
+
+    #include "../../telemetry.c"
+
     
 }
