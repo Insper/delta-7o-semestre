@@ -16,7 +16,7 @@ int main() {
 
         printf("Teste 5 + 7\n");
         BigInt *r = bigint_sum(a, b);
-        assertEquals("r->N == 1", r->n, 2);
+        assertEquals("r->N == 2", r->n, 2);
         assertEquals("r->digits == {2, 1}", r->digits[0] == 2 && r->digits[1] == 2, 1);
 
         bigint_free(a);
