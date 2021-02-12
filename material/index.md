@@ -14,4 +14,4 @@ Os temas de cada dia estão listados abaixo. No último dia faremos uma nova DEL
 2. [Problemas com vetores](02-problemas-com-vetores)
 3. [Matrizes](03-matrizes)
 4. [Estruturas de dados simples](04-diversos)
-5. Exercícios livres
+5. [Exercícios livres](05-diversos)
