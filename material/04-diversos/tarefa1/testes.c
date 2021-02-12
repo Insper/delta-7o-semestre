@@ -31,7 +31,7 @@ int main() {
         printf("Resultado: %s}\n", msg);
 
         assertEquals("r->N == 2", r->n, 2);
-        assertEquals("r->digits == {2, 1}", r->digits[0] == 2 && r->digits[1] == 2, 1);
+        assertEquals("r->digits == {2, 1}", r->digits[0] == 2 && r->digits[1] == 1, 1);
 
         bigint_free(a);
         bigint_free(b);
