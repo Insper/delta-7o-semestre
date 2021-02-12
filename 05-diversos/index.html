@@ -12,18 +12,18 @@
       
         <meta name="author" content="Igor Montagner">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
     
     
       
-        <title>Programa DELTA 7o semestre - Algoritmos</title>
+        <title>Exercícios diversos - Programa DELTA 7o semestre - Algoritmos</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.63b94e9e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.63b94e9e.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.7f672a1f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7f672a1f.min.css">
       
       
         
@@ -41,7 +41,7 @@
     
     
     
-      <link rel="stylesheet" href="css/printing.css">
+      <link rel="stylesheet" href="../css/printing.css">
     
     
       
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#programa-delta-7o-semestre-algoritmos" class="md-skip">
+        <a href="#exercicios-diversos" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
 
     <!-- Link to home -->
     <a
-      href="."
+      href=".."
       title="Programa DELTA 7o semestre - Algoritmos"
       class="md-header-nav__button md-logo"
       aria-label="Programa DELTA 7o semestre - Algoritmos"
@@ -156,7 +156,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Exercícios diversos
             
           </span>
         </div>
@@ -223,7 +223,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Programa DELTA 7o semestre - Algoritmos" class="md-nav__button md-logo" aria-label="Programa DELTA 7o semestre - Algoritmos">
+    <a href=".." title="Programa DELTA 7o semestre - Algoritmos" class="md-nav__button md-logo" aria-label="Programa DELTA 7o semestre - Algoritmos">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -238,20 +238,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
-    
   </li>
 
     
@@ -286,22 +277,22 @@
                   
                 
                 
-                <h1 id="programa-delta-7o-semestre-algoritmos">Programa DELTA 7o semestre - Algoritmos<a class="headerlink" href="#programa-delta-7o-semestre-algoritmos" title="Permanent link">&para;</a></h1>
-<p>O principal objetivo da DELTA do 7o semestre é promover um espaço de prática para desenho e implementação de algoritmos. Em especial, veremos problemas que possam ser resolvidos com vetores e matrizes. </p>
-<p>A estrutura das aulas será a seguinte:</p>
-<ul>
-<li>30 min - discussão de um problema da aula anterior</li>
-<li>70 min - prática de exercícios</li>
-<li>20 min - fechamento com dúvidas gerais</li>
-</ul>
-<p>Os temas de cada dia estão listados abaixo. No último dia faremos uma nova DELTA retomando atividades feitas durante esta semana.</p>
-<ol>
-<li><a href="01-formulas-matematicas">Fórmulas matemáticas</a></li>
-<li><a href="02-problemas-com-vetores">Problemas com vetores</a></li>
-<li><a href="03-matrizes">Matrizes</a></li>
-<li><a href="04-diversos">Estruturas de dados simples</a></li>
-<li><a href="05-diversos">Exercícios livres</a></li>
-</ol>
+                <h1 id="exercicios-diversos">Exercícios diversos<a class="headerlink" href="#exercicios-diversos" title="Permanent link">&para;</a></h1>
+<p>Os exercícios finais não tem nenhum tema em particular e visam servir de prática para o desenho de algoritmo simples. Idealmente ambos deveriam ser finalizados em menos de 60 minutos. </p>
+<h1 id="tarefa-1">Tarefa 1<a class="headerlink" href="#tarefa-1" title="Permanent link">&para;</a></h1>
+<p>Dadas duas strings, verifique se uma é <a href="https://pt.wikipedia.org/wiki/Anagrama">anagrama</a> da outra. Veja <em>testes.c</em> para diversos exemplos de anagramas.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall testes.c -o testes -lsystemd -lm</code></p>
+</div>
+<h1 id="tarefa-2">Tarefa 2<a class="headerlink" href="#tarefa-2" title="Permanent link">&para;</a></h1>
+<p>Dados dois vetores de inteiros, preencha um terceiro vetor com a intereseção dos dois primeiros. Você pode supor que os vetores não possuem elementos repetidos, mas não pode supor que eles estão ordenados. Você pode supor que a variável de saída já está alocada e contém espaço suficiente para guardar todos os elementos necessários.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Abra o arquivo <em>solucao.c</em> e modifique-o para passar nos testes. Para isto basta compilar o programa com as instruções abaixo e executá-lo.</p>
+<p><code>gcc -Og -Wall solucao.c testes.c -o testes -lsystemd -lm</code></p>
+</div>
                 
               
               
@@ -333,22 +324,22 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.fae956e7.min.js"
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
       
-        <script src="translate-admonitions.js"></script>
+        <script src="../translate-admonitions.js"></script>
       
     
   </body>

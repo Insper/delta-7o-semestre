@@ -27,25 +27,10 @@ int main() {
         sprintf(msg, "Teste 1: caminho entre 0 e 2. Esperado %d recebido %d", 1, c);
         assertEquals(msg, 1, c);
 
-        c = existe_caminho(mat, N, 0, 3);
-        sprintf(msg, "Teste 1: caminho entre 0 e 3. Esperado %d recebido %d", 1, c);
-        assertEquals(msg, 1, c);
-
         c = existe_caminho(mat, N, 2, 1);
         sprintf(msg, "Teste 1: caminho entre 2 e 1. Esperado %d recebido %d", 1, c);
         assertEquals(msg, 1, c);
 
-        c = existe_caminho(mat, N, 0, 3);
-        sprintf(msg, "Teste 1: caminho entre 0 e 3. Esperado %d recebido %d", 0, c);
-        assertEquals(msg, 0, c);
-
-        c = existe_caminho(mat, N, 0, 4);
-        sprintf(msg, "Teste 1: caminho entre 0 e 4. Esperado %d recebido %d", 0, c);
-        assertEquals(msg, 0, c);
-
-        c = existe_caminho(mat, N, 4, 3);
-        sprintf(msg, "Teste 1: caminho entre 4 e 3. Esperado %d recebido %d", 1, c);
-        assertEquals(msg, 1, c);
     }
 
     {
